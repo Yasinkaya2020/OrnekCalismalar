@@ -19,8 +19,8 @@ public class AmazonPage {
     // bana hucredeki yaziyi getirecek bir method olusturun
     public String hucreYazisiGetir(int satir,int sutun){
         String hucreXpath="//tr["+satir+"]//td["+sutun+"]";
-        String hucredekiYazi=Driver.getDriver().findElement(By.xpath(hucreXpath)).getText();
-        return hucredekiYazi;
+        String hucredekiYazisi=Driver.getDriver().findElement(By.xpath(hucreXpath)).getText();
+        return hucredekiYazisi;
     }
     public void enAltaGit(){
         Actions actions=new Actions(Driver.getDriver());
